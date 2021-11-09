@@ -6,10 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about.component.scss']
 })
 export class AboutComponent implements OnInit {
-
+  public TraiCay = ['Táo','Nho','Cam','Xoài','Bưởi'];
   constructor() { }
 
-  ngOnInit(): void {
+  public  ngOnInit(): void {
+    console.log('trai cay= ', this.TraiCay);
   }
 
 }
