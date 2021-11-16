@@ -1,11 +1,12 @@
 <div class="test">
     <h3>Đây là component about</h3> 
-    <h1>Trái cây</h1>
+    <!-- <h1>Trái cây</h1>
         <div *ngFor="let trai of TraiCay; let i = index">
             <li>{{ i + 1 }}. {{ trai}}</li>
-        </div>
+        </div> -->
     <br/>
-    <table class="table">
+    <!-- <table class="table">
+
         <tr>
             <th>Thứ tự</th>
             <th>Tên</th>
@@ -22,5 +23,18 @@
                 <span *ngIf="trai.hagia">{{ trai.gia | onSale | uppercase }}</span>
             </td>
         </tr>
-    </table>
+    </table> -->
+    Tỉnh thành phố: 
+    <select id = "city" (change)="changeCity($event)">
+        <option *ngFor="let data of VietNamData" value="{{data.city}}">
+            {{data.city}}
+        </option>
+    </select>
+    <br>
+    Quận Huyện:
+    <select id="district">
+        <option *ngFor="let district of districts" value="{{district}}">
+            {{district}}
+        </option>
+    </select>
 </div>
