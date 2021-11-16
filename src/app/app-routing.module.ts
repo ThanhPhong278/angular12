@@ -7,7 +7,7 @@ const routes: Routes = [
   { path: 'about', component: AboutComponent },
   { path: 'home', component: HomeComponent },
   { path: '', component: HomeComponent},
-  { path: '**', component: PageNotFoundComponentComponent },  // Wildcard route for a 404 page
+  { path: '**', component: PageNotFoundComponentComponent },
 ];
 
 @NgModule({
