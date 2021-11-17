@@ -12,7 +12,7 @@ export class AboutComponent implements OnInit {
     {ten: 'Nho',gia: -3, hagia: false},
     {ten: 'Cam',gia: 5, hagia: true},
   ];
-
+  public mycolor = 'red';
   public districts: string[] = ['Quận huyện'];
   public VietNamData = [
     {city: 'Chọn thành phố', district: ['Quận huyện'] },
