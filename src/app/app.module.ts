@@ -11,6 +11,8 @@ import { HightLightDirective } from './Directives/hight-light.directive';
 import { TemplateDrivenFormComponent } from './template-driven-form/template-driven-form.component';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { GetDataComponent } from './get-data/get-data.component';
+import { HttpClientModule } from '@angular/common/http' 
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +22,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     PageNotFoundComponentComponent,
     HightLightDirective,
     TemplateDrivenFormComponent,
-    ReactiveFormComponent
+    ReactiveFormComponent,
+    GetDataComponent
 
   ],
   imports: [
@@ -28,6 +31,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

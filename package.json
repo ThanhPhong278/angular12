@@ -1,11 +1,10 @@
 {
-  "name": "angular12",
+  "name": "learn-angular",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "xaydung":"ng build --base-href /Angular12/ --deploy-url /Angular12 --configuration production",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },

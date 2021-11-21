@@ -1,12 +1,12 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "cli": {
-    "analytics": "095ffc2d-78ea-4a13-979f-54a444b48475"
+    "analytics": "42522fa5-614f-4a00-9510-d417e9926cf4"
   },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Angular12": {
+    "LearnAngular": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -23,7 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/Angular12",
+            "outputPath": "dist/LearnAngular",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -75,10 +75,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "Angular12:build:production"
+              "browserTarget": "LearnAngular:build:production"
             },
             "development": {
-              "browserTarget": "Angular12:build:development"
+              "browserTarget": "LearnAngular:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -86,7 +86,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Angular12:build"
+            "browserTarget": "LearnAngular:build"
           }
         },
         "test": {
@@ -110,5 +110,5 @@
       }
     }
   },
-  "defaultProject": "Angular12"
+  "defaultProject": "LearnAngular"
 }
